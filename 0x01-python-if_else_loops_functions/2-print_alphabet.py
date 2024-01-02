@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import string
-print(string.ascii_lowercase, end='')
+for char in range(ord('a'), ord('z') + 1):
+    print(chr(char), end='')
