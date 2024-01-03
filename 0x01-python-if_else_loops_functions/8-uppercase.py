@@ -6,6 +6,10 @@ def uppercase(str):
     print()
 
 
-uppercase("holberton")
-uppercase("Holberton School")
-uppercase("Holberton School 98 Battery street")
+if __name__ == "__main__":
+    uppercase("holberton")
+    uppercase("Holberton School")
+    uppercase("Holberton School, 98 battery street")
+    uppercase("")
+    uppercase("98")
+    uppercase("z")
