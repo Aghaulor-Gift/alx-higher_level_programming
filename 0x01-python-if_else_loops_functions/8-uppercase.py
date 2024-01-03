@@ -6,8 +6,9 @@ def uppercase(s):
     print()
 
 
-uppercase("best")
-uppercase("Best School 98 Battery street")
+uppercase("holberton")
+uppercase("Holberton School")
+uppercase("Holberton School 98 Battery street")
 
 
 def print_last_digit(number):
