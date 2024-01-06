@@ -5,4 +5,5 @@ def multiple_returns(sentence):
 
     length = len(sentence)
     first_char = sentence[0]
-    return "{:d} {}".format(length, first_char)
+    return length, first_char
+
