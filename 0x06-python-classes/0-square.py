@@ -7,7 +7,11 @@ class Square:
     Attributes:
         None
 
-    my_methods:
+    Methods:
         None
     """
+    pass
+
+
+if __name__ == "__main__":
     pass
