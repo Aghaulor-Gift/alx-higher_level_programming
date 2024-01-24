@@ -1,5 +1,5 @@
 #!/use/bin/python3
-"""Defines a node of a singly linked list. """
+"""Defines a class node of a singly linked list. """
 
 
 class Node:
@@ -11,7 +11,7 @@ class Node:
 
         Args:
             data (int): The data for the node.
-            next_node (Node, optional): The next node in the list (default is None).
+            next_node (Node, optional): The next node in the list set to None
         """
         self.data = data
         self.next_node = next_node
@@ -65,7 +65,8 @@ class SinglyLinkedList:
 
     def sorted_insert(self, value):
         """
-        Inserts a new Node into the correct sorted position in the list (increasing order).
+        Inserts a new Node into the correct sorted position in the list
+        in increasing order.
 
         Args:
             value (int): The value for the new Node.
@@ -77,7 +78,8 @@ class SinglyLinkedList:
             self.__head = new_node
         else:
             current = self.__head
-            while current.next_node is not None and current.next_node.data < value:
+            while current.next_node is not None and \
+                    current.next_node.data < value:
                 current = current.next_node
 
             new_node.next_node = current.next_node
