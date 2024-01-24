@@ -13,15 +13,16 @@ def list_division(my_list_1, my_list_2, list_length):
             division_result = element_1 / element_2
             result_list.append(division_result)
 
-        except TypeError as e:
-            print(e)
+
+        except TypeError:
+            print("wrong type")
             result_list.append(0)
-        except ZeroDivisionError as e:
-            print(e)
+        except ZeroDivisionError:
+            print("division by 0")
             result_list.append(0)
         except IndexError:
             print("out of range")
             result_list.append(0)
         finally:
             pass
-        return result_list
+    return result_list
