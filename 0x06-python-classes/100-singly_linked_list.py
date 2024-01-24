@@ -1,5 +1,5 @@
 #!/use/bin/python3
-"""Defines a class of a singly linked list. """
+"""Defines singly linked list. """
 
 
 class Node:
@@ -52,12 +52,7 @@ class Node:
 
 
 class SinglyLinkedList:
-    """
-    Defines a singly linked list.
-
-    Attributes:
-        __head: Private instance attribute representing the head of the list.
-    """
+    """Defines a singly linked list."""
 
     def __init__(self):
         """Initializes an empty singly linked list."""
@@ -87,6 +82,7 @@ class SinglyLinkedList:
 
     def __str__(self):
         """String representation of the entire list."""
+
         result = ""
         current = self.__head
         while current is not None:
