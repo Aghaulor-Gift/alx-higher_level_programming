@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Defines magic class from a given ByteCode"""
+"""Defines MagicClass from a given ByteCode"""
 import math
 
 
 class MagicClass:
-    """Represent the magicclass"""
+    """Represent the MagicClass"""
 
     def __init__(self, radius=0):
         """
@@ -13,8 +13,8 @@ class MagicClass:
         radius(int,float):radius initialised to 0.
         """
 
-        if type(radius) not in (int, float) or type(radius)
-        is float and radius.is_integer() is False:
+        if type(radius) not in (int, float) or (type(radius) is float and
+                                                not radius.is_integer()):
             raise TypeError('radius must be a number')
 
         self.__radius = radius
