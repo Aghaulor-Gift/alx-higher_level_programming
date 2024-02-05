@@ -1,0 +1,29 @@
+The ``1-my_list.py`` module
+============================
+
+Using ``MyList``
+---------------------
+
+Importing function from the module:
+    >>> MyList = __import__('1-my_list').MyList
+
+Create an empty MyList
+    >>> my_list = MyList()
+    >>> print(my_list)
+    []
+
+Append elements to the MyList
+    >>> my_list = MyList()
+    >>> my_list.append(5)
+    >>> my_list.append(2)
+    >>> my_list.append(8)
+    >>> my_list
+    [5, 2, 8]
+
+Print the sorted MyList
+    >>> my_list.print_sorted()
+    [2, 5, 8]
+
+Check if the original MyList is unchanged
+    >>> my_list    
+    [5, 2, 8]
