@@ -1,0 +1,31 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+---------------------
+
+Importing function from the module:
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+Testing area method
+>>> base_geometry_instance = BaseGeometry()
+>>> base_geometry_instance.area()
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+
+Testing integer_validator method with a valid integer
+>>> base_geometry_instance.integer_validator("side_length", 5)
+
+Testing integer_validator method with a non-integer value
+>>> base_geometry_instance.integer_validator("side_length", "not_an_integer")
+Traceback (most recent call last):
+    ...
+TypeError: side_length must be an integer
+
+Testing integer_validator method with a non-positive integer
+>>> base_geometry_instance.integer_validator("side_length", -3)
+Traceback (most recent call last):
+    ...
+ValueError: side_length must be greater than 0
