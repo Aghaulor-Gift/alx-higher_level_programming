@@ -11,5 +11,7 @@ def append_write(filename="", text=""):
     return characters_added
 
 if __name__ == "__main__":
+    filename = "file_append.txt"
+    text = "This School is so cool!\n"
     characters_added_count = append_write(filename, text)
     print(characters_added_count)
