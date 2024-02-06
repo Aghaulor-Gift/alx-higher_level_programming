@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 """Student module
-
-Defines the Student class representing a student with first name, last name, and age.
+Defines the Student class representing a student with first name,\
+last name, and age.
 """
+
 
 class Student:
     """
