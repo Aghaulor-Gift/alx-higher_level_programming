@@ -2,11 +2,10 @@
 
 ## Table of Contents:
 
-###. Introduction
+###  Introduction
 ###  Features
 ###  How to Start
 ###  Cloning the Repository
-###  Exercises
 
 ---
 
