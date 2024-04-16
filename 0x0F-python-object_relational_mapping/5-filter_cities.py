@@ -28,13 +28,11 @@ if __name__ == "__main__":
     cur.execute(query, (state_name,))
     rows = cur.fetchall()
 
-    unique_cities = set()
-
-    for row in rows:
-        city_name = row[0]
-        unique_cities.add(city_name)
-
-    print(", ".join(unique_cities))
+    for i, row in enumerate(rows):
+        if i > 0:
+            print(', ', end='')
+        print(row[0], end='')
+    print()
 
     cur.close()
     db.close()
