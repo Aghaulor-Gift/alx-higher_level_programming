@@ -22,16 +22,19 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     query = "SELECT cities.name FROM cities\
-            JOIN states ON states.id\
+            JOIN states ON cities.state_id = states.id\
             WHERE states.name LIKE BINARY %s ORDER BY cities.id ASC"
 
     cur.execute(query, (state_name,))
     rows = cur.fetchall()
 
-    for i, row in enumerate(rows):
-        if i > 0:
-            print(', ', end='')
-        print(row[0], end='')
-    print()
+    unique_cities = set()
+
+    for row in rows:
+        city_name = row[0]
+        unique_cities.add(city_name)
+
+    print(", ".join(unique_cities))
+
     cur.close()
     db.close()
