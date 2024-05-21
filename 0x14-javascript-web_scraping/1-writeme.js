@@ -10,6 +10,6 @@ fs.writeFile(filename, content, 'utf8', (err) => {
     console.error(err);
     return;
   }
-  return;
+  console.log();
 }
 );
