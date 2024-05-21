@@ -3,7 +3,7 @@
 
 const request = require('request');
 
-const apiUrl = process.argv[2];
+const apiUrl = 'https://swapi-api.alx-tools.com/api/people/';
 
 request(apiUrl, function (error, response, body) {
   if (error) {
@@ -12,7 +12,7 @@ request(apiUrl, function (error, response, body) {
   }
   if (response.statusCode === 200) {
     const character = JSON.parse(body).results;
-    console.log('Star Wars Characters:');
+
     character.forEach(characters => {
       console.log(characters.name);
     });
