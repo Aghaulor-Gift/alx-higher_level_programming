@@ -3,9 +3,9 @@
 // “Wedge Antilles” is present.
 
 const request = require('request');
-const charID = '18';
 const apiUrl = process.argv[2];
-const charUrl = `https://swapi-api.alx-tools.com/api/films/${charID}/`;
+const charID = '18';
+const charUrl = `https://swapi-api.alx-tools.com/api/people/${charID}/`;
 
 request(apiUrl, (error, response, body) => {
   if (error) {
